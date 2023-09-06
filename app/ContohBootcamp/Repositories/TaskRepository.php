@@ -12,6 +12,7 @@ class TaskRepository
 	}
 
 	/**
+	 * [GET COLLECTION DATAs] 
 	 * Untuk mengambil semua tasks
 	 */
 	public function getAll()
@@ -21,37 +22,32 @@ class TaskRepository
 	}
 
 	/**
+	 * [GET DATA by ID] 
 	 * Untuk mendapatkan task bedasarkan id
 	 *  */
 	public function getById(string $id)
 	{
-		$task = $this->tasks->find(['_id'=>$id]);
+		$task = $this->tasks->find(['_id' => $id]);
 		return $task;
 	}
 
 	/**
-	 * Untuk membuat task
-	 */
-	public function create(array $data)
+	 * [SAVE NEW or UPDATED DATA] 
+	 * Untuk menyimpan task baik untuk membuat baru atau perubahan task yang sudah ada
+	 *  */
+	public function save(array $data)
 	{
-		$dataSaved = [
-			'title'=>$data['title'],
-			'description'=>$data['description'],
-			'assigned'=>null,
-			'subtasks'=> [],
-			'created_at'=>time()
-		];
-
-		$id = $this->tasks->save($dataSaved);
+		$id = $this->tasks->save($data);
 		return $id;
 	}
 
 	/**
-	 * Untuk menyimpan task baik untuk membuat baru atau menyimpan dengan struktur bson secara bebas
-	 *  */
-	public function save(array $editedData)
+	 * [DELETE DATA by ID] 
+	 * Untuk menghapus data task berdasarkan id
+	 */
+	public function delete(string $id)
 	{
-		$id = $this->tasks->save($editedData);
+		$id = $this->tasks->deleteQuery(['_id' => $id]);
 		return $id;
 	}
 }

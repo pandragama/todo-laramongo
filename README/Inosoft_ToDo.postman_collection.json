@@ -1,0 +1,1527 @@
+{
+	"info": {
+		"_postman_id": "1817c08f-6f3a-41c9-8a79-9cb1b9531df8",
+		"name": "Inosoft_ToDo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29155479"
+	},
+	"item": [
+		{
+			"name": "Bootcamp API",
+			"item": [
+				{
+					"name": "Show Tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/task/show_tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"task",
+								"show_tasks"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mendapatkan data dari Task Collection",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/task/show_tasks",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"show_tasks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:19:22 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:19:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IngrMnE3SWZ4Z2N5SDVxS28vWDNSWVE9PSIsInZhbHVlIjoiYXUxSEdqL2JzdDhMN1o0WWFhcnNSWUM0ek5rQmlsQTA4eWsvNXUvRTNxb0J4UDVUMXRNNk9ZUlJVMjJ1VWJzZXQvVk4rdHkxaXk3blBhNTBVd1UxZ3I3enZOL05zbzliS1ZzRXJZNzlYVzcwdGRlNVN0d2cyOUgyT05BNUJRdEwiLCJtYWMiOiIxYjkxYzkxZGYzYWZiNGYwNzYyMmU5ZTAxODVlYzg2NjU0MWExZmY2ZDdjYzRhZjg4MWNkOTFkZDJkNmM1NzNmIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:19:22 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IlFlQUo3VUFWdTh0OVJvbkVMMHdyZnc9PSIsInZhbHVlIjoicDhIcVR4QVVXamZjV040dE90MCsyTFAxOGpHRlFkck5PN0F4MjZKTHlyTHVMWDM2YVlyS01WTXdTZnU1MEdYS3NKODlsUUt4V0hsajN6TFFWYnFNdTJnSXBkaTFyR3pzN3BoUkZSa2gxS0hqY2MvTGV0eXFocHJhUThHVUtVNVkiLCJtYWMiOiI5YzQwNzEwZTY3YWI4NjdiODhmOGY3Nzc1OTA5Njg2YTE2MjBiNzYyMmNkYzAwNDVlM2Y4NGFiN2VhYTY2NTc1IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:19:22 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"64f88a0d383b2b23af0e05c1\",\n        \"assigned\": null,\n        \"created_at\": 1694009869,\n        \"description\": \"Deskripsi task 1\",\n        \"subtasks\": [],\n        \"title\": \"Ini task 1\"\n    }\n]"
+						},
+						{
+							"name": "Contoh Lain",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/task/show_tasks",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"show_tasks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 15:06:21 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 15:06:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6InVOQ0ExSzFwMnNoUlhTL0lKSloxdEE9PSIsInZhbHVlIjoicmk4Mi9mMkNPaVJYd2JjV1NpaWlLT0tMbTlmbll5U0JpWEpCMmR4eWRlVk1qM1QwMzI4aUhFQ2VjbUJCb21maFRycHZ2c0haUXVxUmR6aDNNR3J3aUNRdVJmQTFzRzlQU0F6N2xpUWNUYjBmdjFLZFJCcnFvZGtmeFpGQmF3UUMiLCJtYWMiOiIzN2E0NzMzZjJkODk4OTQwNzdkZmM2YjM3Zjk2OGJhNDdhYWY1NzU1ZDQzNGE0NzQ3NzI4Yjk3YmJhOWM0ZjhhIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 17:06:21 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6Im02M3JZd2FPSUxmTVJqRlNJYUNBR1E9PSIsInZhbHVlIjoiWmRWdnFEaTJuTk9GZmZMcFBwWVFyQkt5Vzd2L000RnVuM1BFRDlBSmdubGFseVp5MmJiVG4wS00vZUpDa2xmK0xudWJBSzY4YThIQWFKSTlsRE5Yd21saFpWM2xvUkFqMS94QmQ1RkhhRjA2eXY4VWFSbVZibkt4VmtCNHVZbmciLCJtYWMiOiJiOTkzMDRhZmRmYTM2MjdmNDIyNGJhMjg4YjJlYTE1YTY0OTc2ZmQ2ZjkzNjVmMzU3YTQ1OTRjMDE2ZWY2MzIzIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 17:06:21 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"64f88a0d383b2b23af0e05c1\",\n        \"assigned\": \"Kentung\",\n        \"created_at\": 1694009869,\n        \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\",\n        \"subtasks\": [\n            {\n                \"_id\": \"64f88f79383b2b23af0e05c5\",\n                \"title\": \"Gantung paus di hangar (kayak biasanya)\",\n                \"description\": \"Ajak Kamidi bantu-bantu (Kamidi biasanya tidur di gudangnya pak kartolo).\"\n            }\n        ],\n        \"title\": \"Berburu paus\"\n    },\n    {\n        \"_id\": \"64f894aa383b2b23af0e05c7\",\n        \"assigned\": \"Ucil\",\n        \"created_at\": 1694012586,\n        \"description\": \"Tengah hari. Keranjangnya dibawa mbak pik.\",\n        \"subtasks\": [],\n        \"title\": \"Memanen kapas di kebun pak jenkins\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Ini task 1\",\r\n    \"description\": \"Deskripsi task 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/task/create_task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"task",
+								"create_task"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Task gagal melalui validasi",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Ini task 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/create_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"create_task"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 15:08:58 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 15:08:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6InBPenZRNmRjSncyN0tvSU9VTFhFK1E9PSIsInZhbHVlIjoibEJpKzgwQ05KZUVyUEtGSXlmV0Y0cUw1VDBiVHZHT0p4ZmI2RyttN2c3aDQ3WGJaOTRCbDNvb04yWitseGplWVlITC9BSCtSeGVEZmtZRzZucDZyaWtlQU1QM2c3R1F3UXZ1b01haTNXNm1FcndWNDdRN0JyeWgyVVNBZlNSLzQiLCJtYWMiOiJkMDM1YWE5ZmE5MGUwY2FmMDY2M2Y1MmE2MWU2MGNlNzMzYTI0YTMxYzhiYWZiNzI2NWRlMzQ0MzZhNGI4YmIxIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 17:08:58 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IkRvNTBoaUhnY28xVWtmTEN1dEFnTlE9PSIsInZhbHVlIjoiZE93NlB1YXFkOE53WFdqTkZYRVFoNW1rQm1nSnhFZ1lrZFFiWDl0RUNsR3V1anFLZDhzTnBIRXc2MVk5WHZCS0ZYd0hxL0hrc09DYnh1c2llY29UUW5nYllGL21kRENBT1F6QWNKNUF0bzd1aXRqbTNWTC9WN0N6NGZpZC8wcjciLCJtYWMiOiJlNGIyZmFmYTU2MmY2NGY0ZjYwNWU5MDdhYmY1ZGVhZjI4ZGEzZWUzNjA0ZTcyMmY5ZGNhMGFmNDI2OWIxZjg3IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 17:08:58 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The given data was invalid.\",\n    \"errors\": {\n        \"description\": [\n            \"The description field is required.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "Menyimpan data Task baru",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Ini task 1\",\r\n    \"description\": \"Deskripsi task 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/create_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"create_task"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:17:49 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:17:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6ImwzaHdacllnN2tTUHpmemxnTi9JeFE9PSIsInZhbHVlIjoiTkFmWXhLd2FBcXF6SDc2aVRvQ3hjTSsrS3pRMHFXUHg0RnViNE5kT2F0NXVhVEZOMmJsK0VPK04ydTNvRHp1Skw4SkZIVUlVT0ZkWHg3WU52MWZiY25NQUx5WExlcldvM2ZWTHVSdHhnKzFSa0VINktIUTZuTWlMNkM1WlNGbFAiLCJtYWMiOiJhYjg2ZmZiNTY5ZjVhNzA2MTM5YjVmNTA2ZGIwMTgwNDBiYmEwYzU0NDZjNmUyYzViOGIxNmZiMTU0ZTIyMGNiIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:17:49 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IjRjWWI2bnU3ZWRvMGJmWEZoa2UrOWc9PSIsInZhbHVlIjoia05NdncrcWNWL0taZEo1bS9NQzI2emh4OHIxY0tRLzA0K0V1OXMrOG52bnBiMEVHaTlqV2ZBS1l3UTNHa2lkU3Bab2R4Q1JIa2phaGtoK2hQZ1BtRDhyL2xxV2JRTjVHL1ZkbEp0ZmhrTFZSQmNyN0w4VWgyZWNDa3pGSGtjRUMiLCJtYWMiOiI2YTZmNDE4NTc3ZGI5YTdiYzhhODE2NmE0ZmQ0NGVmZGFjZjZiYTE3YjY5YzU1MjM0ZTg3NDhhNjg3ZTkxOWU3IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:17:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"64f88a0d383b2b23af0e05c1\",\n    \"assigned\": null,\n    \"created_at\": 1694009869,\n    \"description\": \"Deskripsi task 1\",\n    \"subtasks\": [],\n    \"title\": \"Ini task 1\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\",\r\n    \"title\": \"Berburu paus\",\r\n    \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/task/update_task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"task",
+								"update_task"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Task tidak ditemukan",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f856cf255e9e83ef0e4b03\",\r\n    \"title\": \"Berburu paus\",\r\n    \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/update_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"update_task"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:23:46 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:23:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6InE5RTJQRGxkSFcrREUzUUVWZzVnUlE9PSIsInZhbHVlIjoiUStTcGRoVmo0dFhNaWl6TEJPamdZb0R6N2J0L1J6MGxFK2RXb1pBSmI5amhvcVNkZVNtS0puY3IxNkJyQzdJSldVNmI0bExNZ3VIUy9CL0tqenpKT0N1aWIyTDV4V1liY2E0dVdUVnpsK2c5b0d2cnRNRzk5QkVYOUcrdnFoanciLCJtYWMiOiJmMmJjNDhjMTI4NWU1MDk4NjdjYTJmMGY0NDE1NzRlN2ZiYTM4YTA0ZmYwNGY1ODJhYTRiMmU1NjlhNjRhMzAzIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:23:46 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IjB4U0ZxdHd0a3V0TWdzV296QTc1N3c9PSIsInZhbHVlIjoibUNrUXJxNmUxaGY0c0ZYYnV2b3ZzNlQ2TDByN3NJWXRJZFRPdE1jR0EzZ0kvcVRaQ0xnM0Z5TlR0NGlESWNNaFB3RVZSSXE4aWtNaVBUQ1M4dWpEUXpZWElmMlhxN2RxdEZUUDhCNG8wczVwOHYyTVF0RDYvMFdzbTB5QU1HeGEiLCJtYWMiOiJlMjg2NDI1N2IyOTNhNjNkNTFmMGQyYTA5YzlkOTdjN2E2YWZlOTAyNzg2MDA0NWNkNDE1ZmVlNTEyMzAzNDgxIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:23:46 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"[ERROR] Data Task dengan id-64f856cf255e9e83ef0e4b03 tidak ditemukan.\"\n}"
+						},
+						{
+							"name": "Mengubah data Task berdasarkan Id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\",\r\n    \"title\": \"Berburu paus\",\r\n    \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/update_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"update_task"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:25:06 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:25:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IjN3eWxFU3hYQWREMGdRK1lkK2pSREE9PSIsInZhbHVlIjoiMFVoVXd2MlhYZUxxR1VmdTJyMnlpc3ZaMkgvNFdVdTQvM01aUDlLbG9CaTVFMURWTzBkLzVUZXlsRS8rdm9JZHdnRUs0R0dIUWhkcHdDS2swb1c5U3ZwNXl2UVh0TlltbzBFbTBtTlo3cHhlcUtNUTN4YXdDMGVURDFzUW5WbnMiLCJtYWMiOiIyYjhmZjQ3MzUyNmM2ZmUxODhhNjhjMGRiY2FhOGMwYmVhZjc4MDQzOTgyMjQ3M2YyYTMwNDIxNmU5ZjVkZGU2IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:25:06 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6Ijd1M0o0bFVqemZCSUphZmVBMTZwUFE9PSIsInZhbHVlIjoiczY0QWZZL2JBRmxpNW03TmtTaGtWbnprQkVqa0RKMFMrd0VpNFVQbVkzQ2ZOc0xLQWdRanNrNjFOTzE1TEVEcllWcHVwZllIS2ZzcUpySFJsUDArWFMzZUp0R3U0V2lDRS93cUR6NkVOOEJ3NzdQL20vTDMzUE1vWXNDZytiNjMiLCJtYWMiOiI4OWQ5YTE1MjMwNzg0MzIyOTc0M2ExYjNiNjVmNjRmNjljNmY5MTkzMThhNjdmYWFkYjQzM2JhZThkMTg2YjVmIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:25:06 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"64f88a0d383b2b23af0e05c1\",\n    \"assigned\": null,\n    \"created_at\": 1694009869,\n    \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\",\n    \"subtasks\": [],\n    \"title\": \"Berburu paus\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Assign Task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\",\r\n    \"assigned\": \"Kentung\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/task/assign_task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"task",
+								"assign_task"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Task tidak ditemukan",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f856cf255e9e83ef0e4b03\",\r\n    \"assigned\": \"Kentung\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/assign_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"assign_task"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:28:17 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:28:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IlZibmRrMXJrd2tMVmgyN2d2RWxzYVE9PSIsInZhbHVlIjoiSkw4OHpqellZeXhhMU95ODIwS3ZlZWhFQzBBWHhlT3FzVFNNMjVzd3BMMWtvZVE0Z2oxcExPNGwyR0ZEV2lqczViR081cThFTklqM3piTGN5V0xhSGwxVEFMQzM5VzZWZXE5eGJFZlB0SzBIVUo4U0U4bDV1OGFsT0FhVHpRcmUiLCJtYWMiOiJhYzJhMTc2ZWZiYjNjNDFlZDQ0YjUwNDVkYTc5OGVhODljNDE1MzhkNzEwZTNlOWQyOGUyODgwYmNhYjRkZGE1IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:28:17 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6Im9sMVNaRTZTb09FV0lrS2ZQM2hXTHc9PSIsInZhbHVlIjoia0dwalp4eXA2eVJTRFBlSHEvVnNxakJxU1hQeWM0K1Bmelh4YUt1ZTBOamlYalVNTCtlKzV2MDhFK0F5eWFpSXZ1dnF1MnN5Tis5ajI5aU5tMmFJTW5yMHlTdXFvMjNtTEpOWXV3cVN6cVdWTnlVbGxjaTY2bm9MWWhmd2xOekwiLCJtYWMiOiI4YWFhMTAyM2RhM2ZiN2M4MTFiMDRjZTdmMzUyMTg2ODhiMmU4ZWQ4ODI2MGMxNzUzZjhhODBmNDhhZjQ2NTQxIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:28:17 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"[ERROR] Data Task dengan id-64f856cf255e9e83ef0e4b03 tidak ditemukan.\"\n}"
+						},
+						{
+							"name": "Menugaskan Kentung berburu paus",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\",\r\n    \"assigned\": \"Kentung\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/assign_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"assign_task"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:28:38 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:28:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6ImNZcnFDTnk1UkUreUxFWnFxZGRwWlE9PSIsInZhbHVlIjoiMnhpRStLK0orVVVLM1U5MjNzMDVBSFVxQXdHL1lFM0VlMENtOFB0ZHpPVHRYb0ExZkMrRFFjNHBENUhNbGZSa0h2d2ljeUNROThCcXBKcnFnTHdDSjBNUkZPUDB5cG1uNzFIcGJwMlhlUDJRd1JZVFZGWWtJNm1VQjdUOHpkM3giLCJtYWMiOiI2ZjFkZDY5ZjZjMmUxMjVmZjdlNzcwMjI1Y2Y2NmE2Y2IzNjQ5Y2ViNWQ4MWMwNjNiY2JjNzEzMzFkZTFjNjdkIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:28:38 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6ImpIRG5jdDlzOXRSOW9Ra3ZrOUlpL0E9PSIsInZhbHVlIjoiazUyNk44VTVKeFgrZCt6OFN4dmRwWE14dkYxOW9IRlF3WVJiZzUzOTk2cFY3Uzg0Y1VaRG5TdFREaWxFMTJzb1ZLendXRnNtYk9jVmVwenFZeXdOU2d3ajFwMWkxUmoxN0psczc2OVBrZWlhbCtML0VwZ25FL2pUcysyYVNvVnkiLCJtYWMiOiI2NTgxMTk0MGViYjU1NWUwOWI4N2Y2Yzc3ZmE1MjcwM2VhODE3MWIyZjU3MzRlMmU2MjQxNGUyNWU1ZGJkNzA3IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:28:38 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"64f88a0d383b2b23af0e05c1\",\n    \"assigned\": \"Kentung\",\n    \"created_at\": 1694009869,\n    \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\",\n    \"subtasks\": [],\n    \"title\": \"Berburu paus\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Unassign Task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/task/unassign_task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"task",
+								"unassign_task"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Task tidak ditemukan",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f856c2255e9e83ef0e4b0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/unassign_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"unassign_task"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:29:46 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:29:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IitFUGt5NzM2TzNFb3dwd1Z1OHFPWnc9PSIsInZhbHVlIjoiM0hUSlFwS3k0TS8xVmQvMnJ0NHdySmRSKzhxcUhmak9zcTJOa0xBRnJqVlc0RjBzQWMrS1pSRU1BQ2swZTc0UWhXdnhJRHgrLzc3cVF5eDNwa1l2T3Q4M1VXUlJxOHhCd2RjcW5DWExDT1d0SUVtSmNmMys2REtqY2tJUTBZQTIiLCJtYWMiOiJmMjAzYzY5ZjY0NDIyODI4Y2EwNDY1MDY2MjllYjU0YjJhNjdjYzRhNmFiZTkxYmNiYjRlZTA2YWQzYWM1NWM1IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:29:46 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IjQ4L3NyY2tOckdEZWI2TjJaV216bWc9PSIsInZhbHVlIjoiWXkvNEh6T3ZpczJucWJBaU5sRFZvak03UHc5QnRjMXhyYVpFWENRZUlCUHM2cHNTTGVHS1Ntd3FNck9oc0lMUk91QTh2SFRYbnpkQUs4eUJ3ZUNaT21KOC9JRWZsUGk5VnFqNXFvQzZ1ME9xZkRCa1g4bUFkZEI3a21CTHVUa2ciLCJtYWMiOiJmYThhMTNiOTIyMzZkMTJiZDYxYzE0MWY2ZDJlYmFmNmFkNTIyNGE1NjlhNzA5ODU0NzgyMWIxNjEwMjBkY2M1IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:29:46 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"[ERROR] Data Task dengan id-64f856c2255e9e83ef0e4b0 tidak ditemukan.\"\n}"
+						},
+						{
+							"name": "Membebas tugaskan Kentung (assigned) dari  Task berburu paus",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/unassign_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"unassign_task"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:30:09 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:30:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6Ik8rNSswU1o5YWlPTFJZWldXS3hGbmc9PSIsInZhbHVlIjoiTmoya0lVNUdXeWkyZlo2Y01PWW1teUg1N04zazNhWnFXNnVKS2c5NHRMalhML1MrbFFpM2w3dEtyVVRUeWJHdFpDU0VvQ0NBQlU1bEhIb0E2dEZkRGRLWlpyZExzVjY5ZUlYUjBmOHI4WUg0RlZyaXljU1k5TFIvZ01CWWQ5WW0iLCJtYWMiOiI1OTg5OGQ4NTkzMThjNjVkZGMzNGZlYWU4MTFkMTNlZGU0YjAwYmUzMTc1NGFiZGFhYWQ4OGQ0NzQzY2VkYTI4IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:30:09 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6InZ3TlRBUEoySHJJVnhRNCsyVVg2T3c9PSIsInZhbHVlIjoiVVpPZHNERElQeHZzSVIrWkFoaXpsbDd4S2VkZHg2UHlySDVvb21OTmxSbzljOGt0R2ZNVHhKaENJWHROd1I3YjArUFpiQVV6MnlFY0ZnWG1MMVhub21tN2pwTm1ON1A0Z3phR2Q2aTQ3RUU2ZzBUUnBNNUlTWnNsMFdrd0t3Y3ciLCJtYWMiOiJjNTc1MThjMDdlOWZiNjI0NzY2NjhjMTY1NzE0Mjc3N2YwNGE1Nzk2YzExOGFlYjIwMDYzYjQ3NDdkZTE4YjI2IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:30:09 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"64f88a0d383b2b23af0e05c1\",\n    \"assigned\": null,\n    \"created_at\": 1694009869,\n    \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\",\n    \"subtasks\": [],\n    \"title\": \"Berburu paus\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create SubTask",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_id\":\"64f88a0d383b2b23af0e05c1\",\r\n    \"title\": \"Gantung paus di hangar (kayak biasanya)\",\r\n    \"description\": \"Ajak Kamidi bantu-bantu (Kamidi biasanya tidur di gudangnya pak kartolo).\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/task/create_subtask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"task",
+								"create_subtask"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Task tidak ditemukan",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\":\"64f856c2255e9e83ef0e4b0\",\r\n    \"title\": \"Gantung paus di hangar (kayak biasanya)\",\r\n    \"description\": \"Ajak Kamidi bantu-bantu (Kamidi biasanya tidur di gudangnya pak kartolo).\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/create_subtask",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"create_subtask"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:40:30 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:40:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IlhKVFRnVWQ0OVh4cXJyc1dJWjd0WWc9PSIsInZhbHVlIjoieVg3WDQ1dnkvOFN3dHljM1pSaGpoODcrczR4YzJYYmphM1pmVk9rc1d4NDRZM1RpbHE5aXptUHp5NXFEVW5jSTFBUXVIRkRqdVA0WDdRUDVOb3NCYUFMZEhaaS9Qbysyckk1SnlrTldVWnBaYXJCTFFMdE84VGk1Mi9ieXJWSTkiLCJtYWMiOiI0ODRkN2NkNTNlNjYyNTFjNjY2MWMwZDdmNDRhZmIwNzNkYzAzNGI0MzE5NWIwNDE4NTdjNWVmZmJkOGM4Njc2IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:40:30 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6Ik1DYmdmeER1UUtmQmp5Tko0VzcvWGc9PSIsInZhbHVlIjoidmx3V21waVE5Q1RkZkxDMmR3VjNFQWFZOUJrMUxucS9nREVTbXRWMEFWQW9yOXBkTmptT24yeWdqQlJVRDJNeUUrb2RYenlaOWVUMmRJdDdmK3Y5ZFBJc2dwYTlVNWZNaXR0ZHR5bGdBNWlyY25VeGNKN2hGK3UzTmVZVlB1TnMiLCJtYWMiOiIzZTU1MDg0NDA1ZjZiZjgxNjc3NDNkY2MyNTRhMzcwYzdiZTYyZWNiZTNiZTU3YWQxZmQ0YzhkODBlYjU5YmM1IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:40:30 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"[ERROR] Data Task dengan id-64f856c2255e9e83ef0e4b0 tidak ditemukan.\"\n}"
+						},
+						{
+							"name": "Menambahkan Subtask 1 pada Task berburu paus",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\":\"64f88a0d383b2b23af0e05c1\",\r\n    \"title\": \"Gantung paus di hangar (kayak biasanya)\",\r\n    \"description\": \"Ajak Kamidi bantu-bantu (Kamidi biasanya tidur di gudangnya pak kartolo).\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/create_subtask",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"create_subtask"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:40:57 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:40:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6InpWaGFETkpXOTdFYUh6NU8rUk03eGc9PSIsInZhbHVlIjoiYjdpOXBEdmtXS2tTdE00QnMzeDhlM2Z1SGpxdHFBcXNiZTdYVVFPaW4vNG4yRXlEdThjUDN2cGdiNHREWk1xbHpzcmJNWDI1Ky9FbEpobWZEUnoxajdoZ3Q3ZUtQVk8wTjNlUG9lSE9aV2pYWFVCRmFEUEdiTkNxeE9nVEZhNVUiLCJtYWMiOiJhYjc2MjQ0NzNlY2Q2YzljMmU0Njg2ZmViMDI2ZmIyZjY0MjIxMmZlYWVjNzBjOGMyNzQ4YWQxMjBiMjkzZjA3IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:40:57 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IkFkWHVTTVBtM2xYWTArME9ueUVCMEE9PSIsInZhbHVlIjoiZi9rb2FBNHVFb0lBQmFUWW5PRTZRZ3lkcVQ5Sk91cGtoenpiYU9ybTNMMDNXYlVDNk1uTU1pRlpNRWRGMlZxbzdvK1dmWll1VmlQQlRLTXlZbWVFMlVvUklOd0V0UFR1WGYrMXR0RHQ1WkpiSGQ5WGhNZG1YQXI0MmFzLzRnWTAiLCJtYWMiOiIwMzU0MTliNzI1Yzk4ZWM1Yzk0YWExZmFiYThiNzdjMzA3MmJlMmJhZmVjNTljODIyMDRkYjg3NzM1ZGFkNzFhIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:40:57 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"64f88a0d383b2b23af0e05c1\",\n    \"assigned\": \"Kentung\",\n    \"created_at\": 1694009869,\n    \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\",\n    \"subtasks\": [\n        {\n            \"_id\": \"64f88f79383b2b23af0e05c5\",\n            \"title\": \"Gantung paus di hangar (kayak biasanya)\",\n            \"description\": \"Ajak Kamidi bantu-bantu (Kamidi biasanya tidur di gudangnya pak kartolo).\"\n        }\n    ],\n    \"title\": \"Berburu paus\"\n}"
+						},
+						{
+							"name": "Menambahkan Subtask 2 pada Task berburu paus",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\":\"64f88a0d383b2b23af0e05c1\",\r\n    \"title\": \"Menonton dan mengomentari orang-orang yang sedang mengolah si paus\",\r\n    \"description\": \"Tetap semangat. Aku butuh bantuan. Maju, maju, maju. Sebaiknya jangan terlalu gegabah ya. Eh awas jatoh.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/create_subtask",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"create_subtask"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:48:06 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:48:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6ImFKci8zMWZZc3ZhK2Vpd25HMitxL1E9PSIsInZhbHVlIjoiM1BrRllTNmxwdHhTbmpvQnV0ekkwWFJCbUlIQVRNVittanBlMkFEZzBPdHMvMWtnUXpoTnJZREcvbytIby9mQVFkWEZEMFh4dHVwM1kzUnBIOWZlTk1KNWcvdmpDL3VHeGJjNnJhMk1neGFmNWZmdHMwU1RyWlhwMnRVSjFQWlciLCJtYWMiOiI3ODFjOGU4ZDVhYzRkOTAzOTc5ZjgxMDQ5OGZjZjZmNGY0MjMxOGEzYTViNDM3N2NmOWEwNGE4YTRkYWY0NmFjIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:48:06 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IlhJbWgxUEFYUGpUcUVwWmlBQUFrdGc9PSIsInZhbHVlIjoiYm1qZDVQTWdhVXNQUjZMNW5mZGZSc25JMVFVQURINDRnaEhqa1A3K2FSLzVkeG1tQ2JtUU14bTlEQVRYVmdYRy9SL05sQWxEWFhaNDVHT2dPWUZuVEdPZ2NGMVRKU0pWV2tZNS9HcjlPY0RnbGl2N1FNaXJXc3BUUStLMGtOeHoiLCJtYWMiOiI0NzYwZDZlYzIyMjcyMzkwODc1MzE5OGIwOWM2NWQ5MGE4ZDkzY2FjNDc2MTdhMTkzYjc5NWM1MmYyZDllYmQyIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:48:06 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"64f88a0d383b2b23af0e05c1\",\n    \"assigned\": \"Kentung\",\n    \"created_at\": 1694009869,\n    \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\",\n    \"subtasks\": [\n        {\n            \"_id\": \"64f88f79383b2b23af0e05c5\",\n            \"title\": \"Gantung paus di hangar (kayak biasanya)\",\n            \"description\": \"Ajak Kamidi bantu-bantu (Kamidi biasanya tidur di gudangnya pak kartolo).\"\n        },\n        {\n            \"_id\": \"64f89126383b2b23af0e05c6\",\n            \"title\": \"Menonton dan mengomentari orang-orang yang sedang mengolah si paus\",\n            \"description\": \"Tetap semangat. Aku butuh bantuan. Maju, maju, maju. Sebaiknya jangan terlalu gegabah ya. Eh awas jatoh.\"\n        }\n    ],\n    \"title\": \"Berburu paus\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Subtask",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\",\r\n    \"subtask_id\":\"64f89126383b2b23af0e05c6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/task/delete_subtask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"task",
+								"delete_subtask"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Task tidak ditemukan",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f856c2255e9e83ef0e4b02\",\r\n    \"subtask_id\":\"64f8575c255e9e83ef0e4b05\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/delete_subtask",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"delete_subtask"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:48:55 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:48:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IjBHdkZ0ejhWV3ljRkFvbUs3dlVBWEE9PSIsInZhbHVlIjoiV3ZrdzdCamp2aEk5RFR3WFhVcHdkUTJZRFBFQm5KRHFQWWdjLzV3OTBZekYweTBianlHMW1Eclk3S2lMaWpRbkN0MHRkWE1xTnNZbk1qNGVSQ1dzZTlDOUlxWllOdnBTVy8zNUYweHN5ZWJYWFlOdlFTWHdoSVhpL3hJTDQ3cGEiLCJtYWMiOiJhYjEwOTVmZWY5OGFkODhhZTNhYThlZmNkYWY3ODFiNjg3MzlmMDA3MjU4MjMwNmYwMTVkNjNlMzAxNzRhZjVhIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:48:55 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IjhxcWNNZ09jN1JVWDE2SVRkWmR5M0E9PSIsInZhbHVlIjoia0h2eTFTNXR0RS9zSnpyMTM4WEZCR1ZDYTI2Y1haSWYzT3dydEtxR1NrL0REMlpVUWlPVFNXZGwzQ3Z6cTdtdzhVVCtEOEgwTkl3U0tGTGoyMWhEUGorQzBHSE5hSnNQaU9XMGlXWUpaY1gvS05tcXY0bFA0MHNNeURQdUc0S2MiLCJtYWMiOiIxODhhYzdhNmY2NDU1ZDRhMzhkYjI0OTRiMDJjZGUxZTFkYmI1MzRhYjllZTRmMWU4MDllZmNiMzE3ZDBkMTg1IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:48:55 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"[ERROR] Data Task dengan id-64f856c2255e9e83ef0e4b02 tidak ditemukan.\"\n}"
+						},
+						{
+							"name": "Data Subtask tidak ditemukan",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\",\r\n    \"subtask_id\":\"64f8575c255e9e83ef0e4b05\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/delete_subtask",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"delete_subtask"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:49:15 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:49:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6ImZ0UEo5dHA2aDdsWDEwVmFlQmVyeGc9PSIsInZhbHVlIjoiVExaU0ZTUlk4ekdnQUM2bFVWeWpIbjI0aFlqSHRuSnJpVzZSM213VnZzZjJ3bmlHSFQxd2VLbW5VSkExckpjWmRBSGMwQVR0RXgwQUw0TTlWRHloSURUTFQ1SFV5c3NONCsrb1FYVTQzK01wNW14YWcwc21icEh5UGMyZ0xGU1IiLCJtYWMiOiIyMmEwMDE0YjNhMGJiNDhhODMxNDg0ZmZlZWFiNjFhZDQyNWFjNzgwMzc2YWY0OWVlNjBjNDNmMzIzOGJmNDgwIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:49:15 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6ImhNU2lmZDBOMUdBb250aWp4aURJTnc9PSIsInZhbHVlIjoibGpYc3dBQnlKT0pYM2xLN1FxRUVCRG1SZmU4UWR5ME5oOHlHTzlNV1F6OE54Sy9KNXFyOXBSbnJaTnlzUm14MFJwdHRkaFpMUnFheUN0NDNBck5XNTB5M0dtdWZ0WkI0cmlmTllKTExJQ2V5b3dnZGU4OExidWE5OTd0YXhYNmsiLCJtYWMiOiIyMDhiMWQ3NjUyZThjMDQxZGU3M2Y0ZDdhMWU4OTlmODY3MzQ5YjQ3YTVjZGJlZTQyNzQ2MGE3ODE1NzQ2MjMxIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:49:15 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"[ERROR] Data SubTask dengan id-64f8575c255e9e83ef0e4b05 tidak ditemukan dalam Task yang dimaksud (64f88a0d383b2b23af0e05c1).\"\n}"
+						},
+						{
+							"name": "Menghapus Subtask 2 pada Task berburu paus",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\",\r\n    \"subtask_id\":\"64f89126383b2b23af0e05c6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/delete_subtask",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"delete_subtask"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:54:45 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 14:54:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IkxzZGtqWEdOZ1p3ZFVRNTlQQXFEdlE9PSIsInZhbHVlIjoiOTlNNTBKWXowOFBXTHdrMVhIQy9jUE1jNXhYMWRhKzdzd2hZVXY0WEorNjUwMUg2blJFelBjRGdDa2llZDlxUnM2U3phQlJpYW1IRjNaT2E2SUlSQ1cyN1IyK24zbDI4MndYNVRFY3FTRFlpd3p0SEdORHhwVFR2dHR1WmJaQzIiLCJtYWMiOiJmYzhlYmRlN2M1ZTVmMTZlZWU2NWQ3NTdhMWQ3MmNiZGQ0ZmY4OGYxOWY1MzJjZmVlYThjZGZkZDZjOWRkM2RkIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:54:45 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6ImNNYWYzUDBPbkZhRHR0Smdmb2NMeXc9PSIsInZhbHVlIjoiVWNOQzJnWkx6bjlmcmtjdTU0QlFHRGpmNjJ4UUVjV00wZTZxVER4RXp0dkZ6NzgyOVIyM201UDRrSitIWWlQTmM3NUhIQ2pVcS8ySDZyVHprOXJHYUxVWW15eDhuejBQWlpCTlB2UzZhTjR2ZUlXUnhobUtYdEMxM0w2SWU3Y3AiLCJtYWMiOiI5Y2JmMzQ0OGFjNzk4MzkzZDRkOTJmN2NkMGFmMzdiZTRlNTgxOTkxMGJjNzJkYTgzMTI0YzIxNmE0NDY3NDcyIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 16:54:45 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"64f88a0d383b2b23af0e05c1\",\n    \"assigned\": \"Kentung\",\n    \"created_at\": 1694009869,\n    \"description\": \"Cukup 1 ekor aja. Jan lupa ajak kipli si pelaut.\",\n    \"subtasks\": [\n        {\n            \"_id\": \"64f88f79383b2b23af0e05c5\",\n            \"title\": \"Gantung paus di hangar (kayak biasanya)\",\n            \"description\": \"Ajak Kamidi bantu-bantu (Kamidi biasanya tidur di gudangnya pak kartolo).\"\n        }\n    ],\n    \"title\": \"Berburu paus\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/task/delete_task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"task",
+								"delete_task"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Task tidak ditemukan",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f856cf255e9e83ef0e4b03\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/delete_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"delete_task"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 15:07:11 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 15:07:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6ImtDMDVBa3NrT0tySWxLTjQ2MlU3d2c9PSIsInZhbHVlIjoiRHlkdDR5WnF3Kzd0MkdCS2NVb3Uwc3NSd29ac1Q2aWdzcGVMZXYwcFREWllib0hTNitnSVdCMGtvMjFrTXh0K0xpSS9ZdjNvUkFOUTRWR0Z0cDU5akRpUnphYXNpa1lnUm16UzRXYUtGWWFESFlkK0RSVW1adGVOS1NaS3RJa3giLCJtYWMiOiI1MzFhODRiOGQ0YjVhYTJkMTg4N2M1NmI2MmRmN2Q5ZGUwY2ZjNjkxYjNlOTE1ZjM3ZTAwNjYwZDE2OGIzZjY5IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 17:07:11 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6InBNQXdYNVFvVm1mWTRMTmIzUTBqMVE9PSIsInZhbHVlIjoiNU1YbnNDU1Z0OUozNDd0d0VEb1VtbGZsWCt2MFdhZnNhQTdJeVJsUFhvN2RuZEFoREFnTnZPYmJXQWkrejFHRXlyNTRtbnlNb1ozRk82R2p0K3dZc3ZhaUx5MnRVbnllWGJTdy91cm01Vzhqdm1YUUhrc0RkQnE3V2g1Mmg0MGMiLCJtYWMiOiIwNzNmNWI3ZTZhM2Q2M2M0YWMwYWY2MDMxN2VjYjhmY2Q3YjYyYWNmODY2NTVmZmQzM2IwYjI1ZGNkZGE4NzI2IiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 17:07:11 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"[ERROR] Data Task dengan id-64f856cf255e9e83ef0e4b03 tidak ditemukan.\"\n}"
+						},
+						{
+							"name": "Menghapus data Task berdasarkan Id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"task_id\": \"64f88a0d383b2b23af0e05c1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/task/delete_task",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"task",
+										"delete_task"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 15:07:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Sep 2023 15:07:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6Imh6VUxhTWtpeGIreUVlQktJUXNvUXc9PSIsInZhbHVlIjoiQ3NzanhQTmdsM3oyM0NnamdXMUJiVU1CcStibWJleUg1MXlqUEtRK0NMay9TNUJhRFVQMTdxTGFQakhpb2puS0RRZHNjTVVQMnNFVWU5ckRpUTVDbWxjWWltTkdVcUxIOVhCalJENFd0M3ZoZ1AyckhxYXYydTJVQ0FuSmNzVzQiLCJtYWMiOiIxNDM0YmQ4YzJkN2JjYjhhMjg3NjYyNTFhMDBiNDNhNDM1MGNkMzE4MTI4NmFhODIxYWZmNDllOWQwZGI4ZTYwIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 17:07:33 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IldvM2FYeVFMRThrR1F4WlZISUhjQVE9PSIsInZhbHVlIjoiOUtPSFlteTMyTW4xcjNVcmcrM1NsMnFxcUNwbjk4d095enNDTFlrZ0VXcEtQMFRkRWlpZE8wcHNRaUVDc3ZsSFpRc3gvMkRaUHFacGdyZ29hbHFaSFE5Mmc1MkI4R3o3MnNKUWR5YmU4dFpBNEoyOGI1RWYzY2NVd3Y0U0ZkSkciLCJtYWMiOiI5YTA0MjMxOGViNGFkZjdkM2NlYjY2MGVkMzJhNWUyOTlkYjczNmVmMzk4ZWFmMzFhYzI2MTkwYTliZDM4ZjVkIiwidGFnIjoiIn0%3D; expires=Wed, 06-Sep-2023 17:07:33 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"[SUCCESS] Data Task dengan id-64f88a0d383b2b23af0e05c1 berhasil dihapus.\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.request.headers.add(\"Accept: application/json\")",
+					"pm.request.headers.add(\"Content-Type: application/json\")"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -13,181 +13,120 @@ class TaskController extends Controller {
 		$this->taskService = new TaskService();
 	}
 
+	// TODO: showTask()
 	public function showTasks()
 	{
 		$tasks = $this->taskService->getTasks();
 		return response()->json($tasks);
 	}
 
+	// TODO: createTask()
 	public function createTask(Request $request)
 	{
 		$request->validate([
-			'title'=>'required|string|min:3',
-			'description'=>'required|string'
+			'title'			=> 'required|string|min:3',
+			'description'	=> 'required|string'
 		]);
 
-		$data = [
-			'title'=>$request->post('title'),
-			'description'=>$request->post('description')
-		];
-
 		$dataSaved = [
-			'title'=>$data['title'],
-			'description'=>$data['description'],
-			'assigned'=>null,
-			'subtasks'=> [],
-			'created_at'=>time()
+			'title'			=> $request->post('title'),
+			'description'	=> $request->post('description'),
+			'assigned'		=> null,
+			'subtasks'		=> [],
+			'created_at'	=> time()
 		];
 
-		$id = $this->taskService->addTask($dataSaved);
-		$task = $this->taskService->getById($id);
+		$result = $this->taskService->addTask($dataSaved);
 
-		return response()->json($task);
+		return response()->json($result);
 	}
 
-
+	// TODO: updateTask()
 	public function updateTask(Request $request)
 	{
 		$request->validate([
-			'task_id'=>'required|string',
-			'title'=>'string',
-			'description'=>'string',
-			'assigned'=>'string',
-			'subtasks'=>'array',
+			'task_id'		=> 'required|string',
+			'title'			=> 'string',
+			'description'	=> 'string',
+			'assigned'		=> 'string',
+			'subtasks'		=> 'array',
 		]);
 
-		$taskId = $request->post('task_id');
-		$formData = $request->only('title', 'description', 'assigned', 'subtasks');
-		$task = $this->taskService->getById($taskId);
+		$taskId  = $request->task_id;
+		$newData = $request->only('title', 'description', 'assigned', 'subtasks');
+		$result  = $this->taskService->updateData($taskId, $newData);
 
-		$this->taskService->updateTask($task, $formData);
-
-		$task = $this->taskService->getById($taskId);
-
-		return response()->json($task);
+		return response()->json($result["result"], $result["rsCode"]);
 	}
 
 
 	// TODO: deleteTask()
 	public function deleteTask(Request $request)
 	{
-		$mongoTasks = new MongoModel('tasks');
 		$request->validate([
-			'task_id'=>'required'
+			'task_id' => 'required'
 		]);
 
 		$taskId = $request->task_id;
+		$result = $this->taskService->deleteData($taskId);
 
-		$existTask = $mongoTasks->find(['_id'=>$taskId]);
-
-		if(!$existTask)
-		{
-			return response()->json([
-				"message"=> "Task ".$taskId." tidak ada"
-			], 401);
-		}
-
-		$mongoTasks->deleteQuery(['_id'=>$taskId]);
-
-		return response()->json([
-			'message'=> 'Success delete task '.$taskId
-		]);
+		return response()->json($result["result"], $result["rsCode"]);
 	}
-
+	
 	// TODO: assignTask()
 	public function assignTask(Request $request)
 	{
-		$mongoTasks = new MongoModel('tasks');
 		$request->validate([
-			'task_id'=>'required',
-			'assigned'=>'required'
+			'task_id'	=> 'required',
+			'assigned'	=> 'required'
 		]);
-
-		$taskId = $request->get('task_id');
-		$assigned = $request->post('assigned');
-		$existTask = $mongoTasks->find(['_id'=>$taskId]);
-
-		if(!$existTask)
-		{
-			return response()->json([
-				"message"=> "Task ".$taskId." tidak ada"
-			], 401);
-		}
-
-		$existTask['assigned'] = $assigned;
-
-		$mongoTasks->save($existTask);
-
-		$task = $mongoTasks->find(['_id'=>$taskId]);
-
-		return response()->json($task);
+		
+		$taskId 	= $request->get('task_id');
+		$assigned 	= $request->post('assigned');
+		$result 	= $this->taskService->taskAssignment($taskId, $assigned);
+		
+		return response()->json($result["result"], $result["rsCode"]);
 	}
 
 	// TODO: unassignTask()
 	public function unassignTask(Request $request)
 	{
-		$mongoTasks = new MongoModel('tasks');
 		$request->validate([
-			'task_id'=>'required'
+			'task_id' => 'required'
 		]);
 
 		$taskId = $request->post('task_id');
-		$existTask = $mongoTasks->find(['_id'=>$taskId]);
-
-		if(!$existTask)
-		{
-			return response()->json([
-				"message"=> "Task ".$taskId." tidak ada"
-			], 401);
-		}
-
-		$existTask['assigned'] = null;
-
-		$mongoTasks->save($existTask);
-
-		$task = $mongoTasks->find(['_id'=>$taskId]);
-
-		return response()->json($task);
+		/**
+		 * untuk membebas tugaskan (nama) orang dari suatu task, ..
+		 * .. panggil fungsi taskAssignment dengan mengoper task_id tanpa nama orang (assigned person).
+		 */
+		$result = $this->taskService->taskAssignment($taskId);
+		
+		return response()->json($result["result"], $result["rsCode"]);
 	}
 
 	// TODO: createSubtask()
 	public function createSubtask(Request $request)
 	{
-		$mongoTasks = new MongoModel('tasks');
 		$request->validate([
-			'task_id'=>'required',
-			'title'=>'required|string',
-			'description'=>'required|string'
+			'task_id'		=> 'required',
+			'title'			=> 'required|string',
+			'description'	=> 'required|string'
 		]);
 
-		$taskId = $request->post('task_id');
-		$title = $request->post('title');
-		$description = $request->post('description');
+		$taskId 		= $request->post('task_id');
+		$title 			= $request->post('title');
+		$description 	= $request->post('description');
 
-		$existTask = $mongoTasks->find(['_id'=>$taskId]);
-
-		if(!$existTask)
-		{
-			return response()->json([
-				"message"=> "Task ".$taskId." tidak ada"
-			], 401);
-		}
-
-		$subtasks = isset($existTask['subtasks']) ? $existTask['subtasks'] : [];
-
-		$subtasks[] = [
-			'_id'=> (string) new \MongoDB\BSON\ObjectId(),
-			'title'=>$title,
-			'description'=>$description
+		$newSubTask = [
+			'_id'			=> (string) new \MongoDB\BSON\ObjectId(),
+			'title'			=> $title,
+			'description'	=> $description
 		];
 
-		$existTask['subtasks'] = $subtasks;
-
-		$mongoTasks->save($existTask);
-
-		$task = $mongoTasks->find(['_id'=>$taskId]);
-
-		return response()->json($task);
+		$result = $this->taskService->addSubTask($taskId, $newSubTask);
+		
+		return response()->json($result["result"], $result["rsCode"]);
 	}
 
 	// TODO deleteSubTask()
@@ -195,41 +134,16 @@ class TaskController extends Controller {
 	{
 		$mongoTasks = new MongoModel('tasks');
 		$request->validate([
-			'task_id'=>'required',
-			'subtask_id'=>'required'
+			'task_id'		=> 'required',
+			'subtask_id'	=> 'required'
 		]);
 
-		$taskId = $request->post('task_id');
-		$subtaskId = $request->post('subtask_id');
+		$taskId 	= $request->post('task_id');
+		$subTaskId 	= $request->post('subtask_id');
 
-		$existTask = $mongoTasks->find(['_id'=>$taskId]);
-
-		if(!$existTask)
-		{
-			return response()->json([
-				"message"=> "Task ".$taskId." tidak ada"
-			], 401);
-		}
-
-		$subtasks = isset($existTask['subtasks']) ? $existTask['subtasks'] : [];
-
-		// Pencarian dan penghapusan subtask
-		$subtasks = array_filter($subtasks, function($subtask) use($subtaskId) {
-			if($subtask['_id'] == $subtaskId)
-			{
-				return false;
-			} else {
-				return true;
-			}
-		});
-		$subtasks = array_values($subtasks);
-		$existTask['subtasks'] = $subtasks;
-
-		$mongoTasks->save($existTask);
-
-		$task = $mongoTasks->find(['_id'=>$taskId]);
-
-		return response()->json($task);
+		$result = $this->taskService->removeSubTask($taskId, $subTaskId);
+		
+		return response()->json($result["result"], $result["rsCode"]);
 	}
 
 }
